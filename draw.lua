@@ -18,7 +18,12 @@ function _draw()
     map(0,0)
     for pl in all(players) do
         spr(pl.sp, pl.x, pl.y, 2, 2, pl.flip)
+        for p in all(particles) do
+            particle_draw(p)
+            particle_update(p)
+        end
     end
+
     
     print(debug)
 end

@@ -61,6 +61,7 @@ function player_update(self)
     if btnp(❎) and self.landed then
         self.dy-=self.boost
         self.landed=false
+        particle_t = 0
     end
 
     --check collision vertical
@@ -69,6 +70,8 @@ function player_update(self)
         self.landed = false
         self.jumping = false
         if collide_map(self,"d",0) then
+            particle_t += 1
+            make_particle({x = self.x+8, y = self.y+16})
             self.landed = true
             self.falling = false
             self.dy = 0
