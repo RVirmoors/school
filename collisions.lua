@@ -29,7 +29,7 @@ function collide_map(obj, aim, flag)
     or fget(mget(x1,y2), flag)
     or fget(mget(x2,y1), flag)
     or fget(mget(x2,y2), flag) then
-        update_debug("bonk")
+        update_debug("bonks!")
         return true
     else
         return false

@@ -5,6 +5,8 @@ function update_debug(text)
 end
 
 function _update()
+    player2_update()
+    player2_animate()
     player_update()
     player_animate()
 end
@@ -15,5 +17,6 @@ function _draw()
     cls()
     map(0,0)
     spr(pl.sp, pl.x, pl.y, 2, 2, pl.flip)
+    spr(pl2.sp, pl2.x, pl2.y, 2, 2, pl2.flip)
     print(debug)
 end
