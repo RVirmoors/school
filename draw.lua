@@ -5,10 +5,10 @@ function update_debug(text)
 end
 
 function _update()
-    player2_update()
-    player2_animate()
-    player_update()
-    player_animate()
+    for pl in all(players) do
+        pl.update(pl)
+        pl.animate(pl)
+    end
 end
 
 function _draw()
@@ -16,7 +16,9 @@ function _draw()
     if debug_timer == 0 then debug = "" end
     cls()
     map(0,0)
-    spr(pl.sp, pl.x, pl.y, 2, 2, pl.flip)
-    spr(pl2.sp, pl2.x, pl2.y, 2, 2, pl2.flip)
+    for pl in all(players) do
+        spr(pl.sp, pl.x, pl.y, 2, 2, pl.flip)
+    end
+    
     print(debug)
 end
