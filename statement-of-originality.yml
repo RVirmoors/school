@@ -1,0 +1,34 @@
+# adapted from https://cs.anu.edu.au/courses/comp1720/resources/faq/#statement-of-originality
+
+# put *your* name here
+name: Grig B
+
+declaration: >-
+  I declare that everything I have submitted in this assignment is entirely my
+  own work, with the following exceptions:
+
+
+# add as many "name+comment" entries as necessary
+# (or remove it altogether if you haven't collaborated with anyone)
+collaboration:
+  - name:
+    comment:
+      
+
+# add as many "url+licence+comment" entries as necessary
+# (or remove it altogether if you haven't used any external code)
+code:
+  - comment: platformer tutorial (nerdy teachers)
+    url: 
+    licence:
+
+  - comment: chatgpt ceva cod pt coliziuni
+    url: https://chatgpt.com/share/67ece6e1-6408-8002-af6f-bb7d2d45fb2e
+
+
+# add as many "url+licence+comment" entries as necessary
+# (or remove it altogether if you haven't used any external assets)
+assets:
+  - comment:
+    url:
+    licence:
