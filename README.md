@@ -1,5 +1,5 @@
 # school
- dream game
+ 
 
 
 for `./pico.sh` debug on macos, first run:
