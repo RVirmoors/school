@@ -95,6 +95,14 @@ function player_update(self)
         end
     end
 
+    -- check collision with enemies
+    for e in all(enemies) do
+        if collide_obj(self, e) then
+            -- player hit
+            self.dy = rnd(0.8) * -1
+        end
+    end
+
     --stop sliding
     if self.sliding then
         if abs(self.dx) < .2

@@ -16,7 +16,7 @@ function make_particle(params)
 end
 
 function particle_draw(p)
-    printh("DRAW PARTICLE "..p.color)
+    -- printh("DRAW PARTICLE "..p.color)
     if particle_t < 12 and particle_t > 0 do
         circfill(p.x, p.y, p.t/2, p.color)
     end

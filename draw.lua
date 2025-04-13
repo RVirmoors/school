@@ -9,6 +9,9 @@ function _update()
         pl.update(pl)
         pl.animate(pl)
     end
+    for e in all(enemies) do
+        e.update(e)
+    end
 end
 
 function _draw()
@@ -24,6 +27,9 @@ function _draw()
         end
     end
 
+    for e in all(enemies) do
+        spr(e.sp, e.x, e.y, 1, 1, e.flip_x, e.flip_y)
+    end
     
     print(debug)
 end
